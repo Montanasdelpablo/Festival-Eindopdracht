@@ -48,6 +48,14 @@ table {
 }
 
 body {
+	
+	padding:0;
+	background-color: #FFE49D;
+}
 
-	background-color: #CE2A2A;
+#navbar {
+	width: 100%;
+	background-color: #E9A2A2;
+	margin-top: 0;
+	height:100px;
 }
