@@ -8,20 +8,20 @@
 				<li> Groningen</li>
 			</ul>
 			<div id="socialmedia">
-			<ul  class="col-md-4">
+			<ul class="col-md-4">
 				<h2> Social Media </h2>
-				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/social.png"></a>   </li>
-				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/social-1.png"></a>  </li>
-				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/social-network.png"></a>   </li>
+				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/"></a>   </li>
+				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/"></a>  </li>
+				<li><a href="#"><img src="<?php echo bloginfo('template_url')?>/img/"></a>   </li>
 				
 			</ul>
 			</div>
 
 			<ul class="col-md-4">
 				<h2> Made by </h2>
-				<li> Pablo Montanas</li>
+				<li> </li>
 				<li> Website:</li>
-				<li> <a href="#"> pablomontanas.com </a> </li>
+				<li> <a href="#"> </a> </li>
 			</ul>
 		
 		</div>
