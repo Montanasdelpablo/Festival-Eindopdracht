@@ -1,3 +1,5 @@
+/* CSS RESET */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,6 +49,14 @@ table {
 	border-spacing: 0;
 }
 
+/* MAIN STYLESHEET */
+
+@font-face {
+	font-family: Amicable;
+	src:url(fonts/amicable.ttf);
+
+}
+
 body {
 	
 	padding:0;
@@ -58,4 +68,72 @@ body {
 	background-color: #E9A2A2;
 	margin-top: 0;
 	height:100px;
+}
+
+#navbar ul {
+	height:100px;
+	position: absolute;
+	left: 280px;
+}
+
+#navbar li {
+	display: inline;
+	line-height: 100px;
+	text-decoration: none;
+	margin-left:25px;
+}
+
+#navbar ul li a {
+	color:#FFF;
+	font-family: Amicable;
+	font-size: 25px;
+}
+
+#navbar ul li a:hover {
+	text-decoration: none;
+}
+
+#navbar ul li a:visited {
+	text-decoration: none;
+}
+
+.footer {
+	background: #18427C;
+	height:160px;
+	bottom: 0;
+	width:100%;
+	position:absolute;
+}
+
+#footercontent {
+	font-family: Amicable;	
+}
+
+#footercontent ul {
+	height:150px;
+	display:inline;
+	position: relative;
+	left:50px;
+}
+
+#footercontent ul h2 {
+	color:#fff;
+	padding-top:15px;
+	font-size:35px;
+}
+
+#footercontent ul li {
+	color:#fff;
+	padding:1px 7px 7px 1px;
+	font-size: 20px;
+}
+
+#footercontent #socialmedia ul li {
+	display:inline;
+	position: relative;
+	padding-top: 15px;
+}
+
+#footercontent #socialmedia ul:nth-child(2) {
+	text-align: right;
 }
