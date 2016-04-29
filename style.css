@@ -63,24 +63,28 @@ body {
 	background-color: #FFE49D;
 }
 
+/* NAVBAR */
+
 #navbar {
 	width: 100%;
 	background-color: #E9A2A2;
 	margin-top: 0;
 	height:100px;
+	position: absolute;
 }
 
 #navbar ul {
 	height:100px;
-	position: absolute;
-	left: 280px;
+	margin-left:250px;
 }
 
-#navbar li {
+#navbar ul li {
+	position: relative;
 	display: inline;
 	line-height: 100px;
 	text-decoration: none;
-	margin-left:25px;
+ 	margin-left: 50px;
+ 	left:175px;
 }
 
 #navbar ul li a {
@@ -96,6 +100,8 @@ body {
 #navbar ul li a:visited {
 	text-decoration: none;
 }
+
+/* FOOTER */
 
 .footer {
 	background: #18427C;
