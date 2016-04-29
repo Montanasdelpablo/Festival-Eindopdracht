@@ -9,6 +9,8 @@ function register_navigation() {
 	register_nav_menus( $locations );
 
 }
+
+// Init register navigation menu
 add_action( 'init', 'register_navigation' );
 
 function showNav() {
