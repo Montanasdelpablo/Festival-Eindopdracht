@@ -143,3 +143,16 @@ body {
 #footercontent #socialmedia ul:nth-child(2) {
 	text-align: right;
 }
+
+/* MAIN CONTENT */
+
+#maincontent {
+	position: relative;
+	width: 50%;
+	height:100%;
+}
+
+#recentenieuws {
+	color: #fff;
+
+}

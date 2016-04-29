@@ -6,9 +6,20 @@ require 'header.php';
 ?>
 
 
+<!-- Main content-->
+
+<div id="maincontent" class="container">
+	
+	
+	
+	<?php 
+
+	 ?>
 
 
+	</div>
 
+</div>
 
 <?php 
 
