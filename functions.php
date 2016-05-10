@@ -42,12 +42,11 @@ function showNav() {
 
 // CUSTOM POST TYPES
 
-// Init the function
-add_action( 'init', 'create_post_type' );
-
 // Creates a function that creates a post type
 function create_post_type() {
-  register_post_type( 'acme_product',
+  
+// NIEUWS CPT
+  register_post_type( 'nieuws',
     array(
       'labels' => array(
         'name' => __( 'Nieuws' ),
@@ -57,6 +56,35 @@ function create_post_type() {
       'has_archive' => true,
     )
   );
+
+// TICKETS CPT
+  register_post_type( 'tickets',
+    array(
+      'labels' => array(
+        'name' => __( 'Tickets' ),
+        'singular_name' => __( 'Ticket' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+
+// ARTIESTEN CPT
+  register_post_type( 'artiesten',
+    array(
+      'labels' => array(
+        'name' => __( 'Artiesten' ),
+        'singular_name' => __( 'Artiest' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
 }
 
+// Init the function
+add_action( 'init', 'create_post_type' );
+
+
 ?>
+
