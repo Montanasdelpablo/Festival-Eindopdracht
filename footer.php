@@ -27,6 +27,7 @@
 		</div>
 
 		<script type="text/javascript" src="<?php echo bloginfo('template_url')?>/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="<?php echo bloginfo('template_url')?>/js/jquery-1.12.3.min.js"></script>
 
 		<?php wp_footer(); ?>
 	</footer>
