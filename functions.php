@@ -41,6 +41,36 @@ function showNav() {
 }
 
 // CUSTOM POST TYPES
+add_theme_support( 'post-thumbnails' );
+add_action( 'init', 'create_nieuws_taxonomies', 0 );
+
+
+function create_nieuws_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	// Labels
+	$labels = array(
+		'name'              => _x( 'Nieuwsgenres', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Nieuwsgenre', 'taxonomy singular name' ),
+		'search_items'      => __( 'Zoek genres' ),
+		'all_items'         => __( 'Alle genres' ),
+		'edit_item'         => __( 'Bewerk genre' ),
+		'update_item'       => __( 'Update genre' ),
+		'add_new_item'      => __( 'Voeg nieuw Genre toe' ),
+		'new_item_name'     => __( 'Nieuwe genre naam' ),
+		'menu_name'         => __( 'Genres' ),
+	);
+	// Arguments
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'genre' ),
+	);
+
+	register_taxonomy( 'genre', array( 'nieuws' ), $args );
+}
 
 // Creates a function that creates a post type
 function create_post_type() {
@@ -50,11 +80,18 @@ function create_post_type() {
     array(
       'labels' => array(
         'name' => __( 'Nieuws' ),
-        'singular_name' => __( 'Nieuwsartikel' )
+        'singular_name' => __( 'Nieuwsartikel' ),
+        'add_new_item' => __('Een nieuw artikel'), 
+        'add_new' => __('Een nieuw artikel'), 
+        'new_item' => __('Nieuw nieuwsartikel'), 
+        'view_item' => __('Bekijk artikel'), 
+        'all_items' => __('Alle nieuwsartikelen'),
+
       ),
       'public' => true,
       'has_archive' => true,
-    )
+      	
+    	)
   );
 
 // TICKETS CPT
