@@ -41,7 +41,7 @@ function showNav() {
 }
 
 // CUSTOM POST TYPES
-add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails', array( 'nieuws', 'nieuws' ) );
 add_action( 'init', 'create_nieuws_taxonomies', 0 );
 
 
@@ -90,7 +90,8 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
-      	
+      'rewrite' => array('slug' => 'nieuws'),
+      'supports' => array('title', 'author', 'excerpt', 'editor', 'thumbnail', 'revisions'),
     	)
   );
 
