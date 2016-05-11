@@ -56,26 +56,44 @@ table {
 	src:url(fonts/amicable.ttf);
 
 }
+html {
+	height:100%;
+	width:100%;
+	
+  	
+}
 
 body {
+	height:100%;
+	width:100%;
+	background: url(img/background.png) center fixed; 
+	background-repeat: no-repeat;	
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover; 
 	
-	padding:0;
-	background-color: #FFE49D;
 }
 
 /* NAVBAR */
 
-#navbar {
-	width: 100%;
-	background-color: #E9A2A2;
-	margin-top: 0;
-	height:100px;
-	position: absolute;
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-header a {
+	color:#e1f2f4;
+	font-family: Amicable;
+	font-size: 25px;
 }
 
+#mainnavigation {
+	
+}
 #navbar ul {
 	height:100px;
-	margin-left:250px;
+	position: absolute;
+	left:25%;
 }
 
 #navbar ul li {
@@ -84,17 +102,18 @@ body {
 	line-height: 100px;
 	text-decoration: none;
  	margin-left: 50px;
- 	left:300px;
+ 	
 }
 
 #navbar ul li a {
-	color:#FFF;
+	color:#e1f2f4;
 	font-family: Amicable;
 	font-size: 25px;
 }
 
 #navbar ul li a:hover {
 	text-decoration: none;
+	color: #ed1846;
 }
 
 #navbar ul li a:visited {
@@ -104,11 +123,11 @@ body {
 /* FOOTER */
 
 .footer {
-	background: #18427C;
+	background: #323846;
 	height:160px;
 	bottom: 0;
 	width:100%;
-	position:absolute;
+	position:fixed;
 }
 
 #footercontent {
@@ -123,7 +142,7 @@ body {
 }
 
 #footercontent ul h2 {
-	color:#fff;
+	color:#e1f2f4;
 	padding-top:15px;
 	font-size:35px;
 }
@@ -146,31 +165,48 @@ body {
 
 /* MAIN CONTENT */
 
+
+
 #maincontent {
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	height:100%;
+	
+}
+
+#logo {
+	position: relative;
+	left:30%;
+	top:25%;
 }
 
 #recentenieuws {
-	color: #fff;
+	
 
+}
+#nieuwsartikelfeed {
+	background-color: rgba(237, 24, 70, 0.8);
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0%;
 }
 
 #nieuwsartikel {
 	position: relative;
-	left:50%;
 	top:15%;
-	width:100%;
-	margin: 5px 20px 20px 5px;
+	width:70%;
+	margin: 0px 40px 40px 0px;
 }
 
 #nieuwsartikel h1 {
+	color:#e1f2f4;
 	font-size: 38px;
 	font-family: Amicable;	
 }
 
 #nieuwsartikel p {
+	color:#e1f2f4;
 	font-size: 25px;
 	font-family: Amicable;	
 }
