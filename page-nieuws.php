@@ -11,7 +11,7 @@ require 'header.php';
 <div id="maincontent">
 	
 	
-	<div id="nieuwsartikelfeed" >	
+	<div id="nieuwsartikelfeed">	
 	<?php 
 		// Arguments for the query
 		$args = array (
@@ -40,12 +40,8 @@ require 'header.php';
 		        echo "</p>";
 		        echo "<br>";
 		        the_excerpt();
-		        echo "<button class='readmore' href='";
-		        get_permalink();
-		        echo "'> Lees meer </button>";
 		        echo "<hr>";
 		    	echo "</div>";
-
 		    	echo "</div>";
 		    }
 		} else {
@@ -53,7 +49,7 @@ require 'header.php';
 		}
 
 			// Restore original Post Data
-			wp_reset_postdata();
+			
 
 			?>
 		</div>
@@ -68,4 +64,3 @@ require 'footer.php';
 ?>
 
 
-?>

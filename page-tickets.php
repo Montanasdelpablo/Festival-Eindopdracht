@@ -56,4 +56,3 @@ require 'footer.php';
 ?>
 
 
-?>
