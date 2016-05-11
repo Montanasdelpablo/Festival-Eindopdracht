@@ -43,7 +43,7 @@ function showNav() {
 // CUSTOM POST TYPES
 add_theme_support( 'post-thumbnails', array( 'nieuws', 'nieuws' ) );
 add_action( 'init', 'create_nieuws_taxonomies', 0 );
-
+add_image_size( 'mycustomsize', 200, 400, true);
 
 function create_nieuws_taxonomies() {
 	// Add new taxonomy, make it hierarchical (like categories)
