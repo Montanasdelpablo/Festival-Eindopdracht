@@ -12,7 +12,9 @@ require 'header.php';
 	
 	
 	<div id="nieuwsartikelfeed" class="col-md-8">	
+	
 	<?php 
+	/*
 		// Arguments for the query
 		$args = array (
 		    'post_type'              => array( 'nieuws' ),
@@ -39,8 +41,9 @@ require 'header.php';
 
 			// Restore original Post Data
 			wp_reset_postdata();
-
-			?>
+		*/
+			?> 
+		
 		</div>
 
 </div>
