@@ -5,13 +5,15 @@ require 'header.php';
 
 ?>
 
-
 <!-- Main content-->
 
-<div id="maincontent" class="container">
+<div id="maincontent" >
 	
-	
-	
+	<div id="logo">	
+		<img class="img-responsive" src="<?php echo bloginfo('template_url')?>/img/logo.png">		
+	</div>
+
+
 	<?php 
 
 	 ?>
