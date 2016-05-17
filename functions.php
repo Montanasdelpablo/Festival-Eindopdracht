@@ -44,6 +44,9 @@ function showNav() {
 add_theme_support( 'post-thumbnails', array( 'nieuws', 'nieuws' ) );
 add_action( 'init', 'create_nieuws_taxonomies', 0 );
 add_image_size( 'mycustomsize', 200, 400, true);
+add_image_size( 'sidebar-thumb', 120, 120, true ); // Hard Crop Mode
+add_image_size( 'homepage-thumb', 220, 180 ); // Soft Crop Mode
+add_image_size( 'singlepost-thumb', 590, 9999 ); // Unlimited Height Mode
 
 function create_nieuws_taxonomies() {
 	// Add new taxonomy, make it hierarchical (like categories)

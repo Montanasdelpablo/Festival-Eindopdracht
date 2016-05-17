@@ -26,22 +26,28 @@ require 'header.php';
 		if ( $query->have_posts() ) {
 		    while ( $query->have_posts() ) {
 		        $query->the_post();
+		        $y = get_permalink();
 		        echo "<div class='container'>";
-		        echo "<div id='thumbnail' class='col-md-6'>";
-		       	   the_post_thumbnail( 'mycustomsize');
-		        echo "</div>";
-
-		        echo "<div id='nieuwsartikel' class='col-md-6'>";
-		        echo "<h1>";	
-		        the_title();
-		        echo "</h1>";
-		        echo "<p>Geschreven door ";	
-		        the_author();
-		        echo "</p>";
-		        echo "<br>";
-		        the_excerpt();
-		        echo "<hr>";
-		    	echo "</div>";
+			        echo "<div class='row'>";
+				        echo "<div id='thumbnail'  class=''>";
+					        echo "<a href='$y'>";
+					       	   the_post_thumbnail('singlepost-thumb');
+					        echo "</a>";
+				        echo "</div>";
+				        echo "<div id='nieuwsartikel' class=''>";
+					        echo "<h1>";
+						        echo "<a href='$y'>";	
+						        the_title();
+						        echo "</a>";
+					        echo "</h1>";
+					        echo "<p>Geschreven door ";	
+					        	the_author();
+					        echo "</p>";
+					        echo "<br>";
+					        	the_excerpt();
+					        echo "<button class='readmore' href='$y'> Lees meer </button>";
+				    	echo "</div>";
+				   	echo "</div>";
 		    	echo "</div>";
 		    }
 		} else {
