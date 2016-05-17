@@ -59,7 +59,7 @@ table {
 html {
 	height:100%;
 	width:100%;
-	
+	position: absolute;
   	
 }
 
@@ -72,7 +72,7 @@ body {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover; 
-	
+	position: relative;
 }
 
 /* NAVBAR */
@@ -93,7 +93,8 @@ body {
 #navbar ul {
 	height:100px;
 	position: absolute;
-	left:25%;
+	left:20%;
+	margin: 0px auto;
 }
 
 #navbar ul li {
@@ -125,20 +126,30 @@ body {
 .footer {
 	background: #323846;
 	height:160px;
-	bottom: 0;
+	bottom:0;
 	width:100%;
-	position:fixed;
+	position: fixed;
+	z-index:9999;	
 }
+
+
 
 #footercontent {
 	font-family: Amicable;	
+}
+
+#footercontent .row {
+	width: 100%;
+	left:10%;
+	position: absolute;
 }
 
 #footercontent ul {
 	height:150px;
 	display:inline;
 	position: relative;
-	left:50px;
+	margin: auto;
+	
 }
 
 #footercontent ul h2 {
@@ -151,34 +162,49 @@ body {
 	color:#fff;
 	padding:1px 7px 7px 1px;
 	font-size: 20px;
+	left:15px;
+	position: relative;
+
 }
 
-#footercontent #socialmedia ul li {
-	display:inline;
+#footercontent .row ul:first-child {
+	left:150px;
+
+}
+
+#footercontent .row ul:last-child {
+	right:150px;
+}
+
+#footercontent ul #socialmedia li {
+	display:inline-block;
+	width:60px;
+	height:50px;
 	position: relative;
+	background-color: #FB4949;
 	padding-top: 15px;
 }
 
-#footercontent #socialmedia ul:nth-child(2) {
-	text-align: right;
+#footercontent ul #socialmedia h2 {
+	margin-left: 25px;
 }
 
 /* MAIN CONTENT */
 
 #maincontent {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height:100%;
 }
 .container {
-	width:100%;
-	max-height:35%;
+	
 }
 
 #logo {
 	position: absolute;
 	left:30%;
 	top:20%;
+	margin: auto;
 }
 
 #recentenieuws {
@@ -190,24 +216,69 @@ body {
 #nieuwsartikelfeed {
 	background-color: rgba(237, 24, 70, 0.7);
 	width:100%;
-	height:100%;
+	height:150%;
 	position: absolute;
 	left:0%;
 }
 
 #thumbnail {
 	width: auto;
-	position: relative;
-	left:15%;
+	position: absolute;
+	left:0;
 	margin: 90px 20px 20px 10px;
+	float:left;
 }
 
 #nieuwsartikel {
 	position: relative;
-	float:right;
-	right:15%;
-	margin: 85px 60px 60px 45px;
+	clear:both;
+	padding-left: 350px;
+	margin: 95px 60px 60px 45px;
+
 	
+}
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	#nieuwsartikel {
+        left:0;
+        margin: 90px 0px 0px 0px;
+        width: 375px;
+
+    }
+    #thumbnail {
+	width:100%;
+	margin: 90px 0px 0px 0px;
+	background-color: red;
+	}
+	.navbar-brand {
+		display: none;
+		}
+	#navbar ul {
+	
+	left:0%;
+	}
+
+	#navbar ul li {
+	 	
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	#nieuwsartikel {
+        left:0%;
+        margin-top: 95px;
+    }
+    .navbar-brand {
+		display: none;
+		}
+
 }
 
 #nieuwsartikel h1 {
