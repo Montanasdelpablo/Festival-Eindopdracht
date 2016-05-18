@@ -6,15 +6,20 @@
 		<?php wp_head(); ?>
 
 
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+
 		<!-- Link stylesheets -->
 		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/style.css">
+
 
 	</head>
 	
 	<body>
 
-
+	<!--
 	<div id="navbar" class="navbar navbar-default">
 		<div id="mainnavigation" class="col-md-12">
 			<div class="navbar-header">
@@ -26,10 +31,30 @@
 	      			</button>
 	     	<a class="navbar-brand" href="#">Buiten Westen</a>
 	    	</div>
+	  -->
 		
 		<!-- Shows navigation -->
+		<div id="mainnavigation">
 		<?php
-		showNav();
+		
+				wp_nav_menu(
+					array(
+						'menu'            => 'Main Navigation',
+						'container'       => 'div',
+						'container_class' => 'menu-{menu slug}-container',
+						'container_id'    => 'cssmenu',
+						'menu_class'      => 'menu',
+						'menu_id'         => '',
+						'echo'            => true,
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul>%3$s</ul>',
+						'walker'          => new CSS_Menu_Maker_Walker()
+						)
+					);
+			
 		?>
 		</div>
 
