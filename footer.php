@@ -1,24 +1,24 @@
 	<footer class="footer">
 		<div id="footercontent" class="container">
 		<ul class="row"> 
-			<ul class="col-lg-4">
+			<ul class="col-md-4">
 				<h2> Contact </h2>
 				<li> Duinkerkenstraat 50 </li>
 				<li> 9723 BT</li>
 				<li> Groningen</li>
 			</ul>
 			
-			<ul class="col-lg-4">
+			<ul class="col-md-4">
 			<div id="socialmedia">
 				<h2> Social Media </h2>
-				<li><a href="#"></a>   </li>
-				<li><a href="#"></a>  </li>
-				<li><a href="#"></a>   </li>
+				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/facebook.png">   </li>
+				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/twitter.png"></li>
+				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/instagram.png"> </li>
 			</div>	
 			</ul>
 			
 
-			<ul class="col-lg-4">
+			<ul class="col-md-4">
 				<h2> Made by </h2>
 				<li> </li>
 				<li> Website:</li>
