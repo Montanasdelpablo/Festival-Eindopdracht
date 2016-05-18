@@ -13,6 +13,9 @@ function register_navigation() {
 // Init register navigation menu
 add_action( 'after_setup_theme', 'register_navigation' );
 
+
+// Word nu niet gebruikt : 
+
 function showNav() {
 
 	
@@ -38,7 +41,10 @@ function showNav() {
 
 }
 
+
+
 // CUSTOM POST TYPES
+
 add_theme_support( 'post-thumbnails', array( 'nieuws', 'nieuws' ) );
 add_action( 'init', 'create_nieuws_taxonomies', 0 );
 add_image_size( 'mycustomsize', 200, 400, true);
@@ -126,6 +132,8 @@ add_action( 'init', 'create_post_type' );
 
 
 // TEST
+
+// Dropdown Menu class
 
 
 class CSS_Menu_Maker_Walker extends Walker {

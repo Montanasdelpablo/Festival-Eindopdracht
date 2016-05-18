@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+	
+	<!-- Hier begint de header -->
 	<head>
 		<title>Festival Website</title>
 		<!-- Main wordpress functions -->
 		<?php wp_head(); ?>
 
-
+		<!-- Width = device-width -->
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 
 		<!-- Link stylesheets -->
+		<!-- Bootstrap-->
 		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/css/bootstrap.min.css">
+		<!-- Dropdown menu -->
 		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/css/styles.css">
+		<!-- Main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_url')?>/style.css">
 
 
@@ -19,6 +24,8 @@
 	
 	<body>
 
+
+	<!-- Oude navigatiebar --> 
 	<!--
 	<div id="navbar" class="navbar navbar-default">
 		<div id="mainnavigation" class="col-md-12">
@@ -33,6 +40,7 @@
 	    	</div>
 	  -->
 		
+
 		<!-- Shows navigation -->
 		<div id="mainnavigation">
 		<?php
