@@ -50,7 +50,8 @@ add_action( 'init', 'create_nieuws_taxonomies', 0 );
 add_image_size( 'mycustomsize', 200, 400, true);
 add_image_size( 'sidebar-thumb', 120, 120, true ); // Hard Crop Mode
 add_image_size( 'homepage-thumb', 220, 180 ); // Soft Crop Mode
-add_image_size( 'singlepost-thumb', 590, 9999 ); // Unlimited Height Mode
+add_image_size( 'post-thumb', 590, 9999 ); // Unlimited Height Mode
+add_image_size( 'singlepost-thumb', 500, 1920, 9999 );
 
 function create_nieuws_taxonomies() {
 	// Add new taxonomy, make it hierarchical (like categories)
@@ -99,6 +100,7 @@ function create_post_type() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'nieuws'),
       'supports' => array('title', 'author', 'excerpt', 'editor', 'thumbnail', 'revisions'),
+      'menu_icon' => 'dashicons-admin-site',
     	)
   );
 
@@ -111,6 +113,7 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'menu_icon' => 'dashicons-admin-page',
     )
   );
 
@@ -123,6 +126,7 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'menu_icon' => 'dashicons-admin-users',
     )
   );
 }
