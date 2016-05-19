@@ -7,8 +7,7 @@
 		<!-- Main wordpress functions -->
 		<?php wp_head(); ?>
 
-		<!-- Width = device-width -->
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
 
 
 		<!-- Link stylesheets -->

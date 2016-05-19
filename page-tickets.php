@@ -17,7 +17,7 @@ require 'header.php';
 	/*
 		// Arguments for the query
 		$args = array (
-		    'post_type'              => array( 'nieuws' ),
+		    'post_type'              => array( 'tickets' ),
 		    'posts_per_page'         => '3',
 		 );
 
