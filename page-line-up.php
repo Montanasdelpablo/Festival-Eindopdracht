@@ -17,8 +17,8 @@ require 'header.php';
 	/*
 		// Arguments for the query
 		$args = array (
-		    'post_type'              => array( 'nieuws' ),
-		    'posts_per_page'         => '3',
+		    'post_type'              => array( 'artiesten' ),
+		    'posts_per_page'         => '',
 		 );
 
 		// the Query
