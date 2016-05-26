@@ -192,6 +192,7 @@ body {
 	position: relative;
 	margin-right: 5px;
 	padding-top: 15px;
+	left:-15px;
 	
 }
 
@@ -202,7 +203,7 @@ body {
 
 
 #footercontent ul #socialmedia h2 {
-	margin-left: 25px;
+	margin-left: 5px;
 }
 
 /* MAIN CONTENT */
@@ -301,10 +302,95 @@ body {
 	text-decoration: none;
 }
 
+#single_cpt_nieuws {
+	top: 90px;
+	position: relative;
+}
+#artikel_main_content {
+	position: relative;
+	top:140px;
+	margin-bottom: 200px;
+}
+
+#sidebarnieuwsartikel {
+	height:500px;
+	width:200px;
+	background-color:#394051;
+}
+
+#sidebarnieuwsartikel h2 {
+	color:#fff;
+	font-size:27px;
+}
+
+
+#sidebarnieuwsartikel ol {
+	color: #fff;
+	font-size: 20px;
+}
+
+#sidebarnieuwsartikel ol li {
+
+}
+
+#sidebarnieuwsartikel p {
+	color:#fff;
+	font-size:15px;
+}
+
+#singlenieuwsartikel {
+	height: 100%;
+	width:930px;
+	background-color:  rgba(237, 24, 70, 1.0);
+	padding-bottom: 240px;
+}
+
+#singlenieuwsartikel h1 {
+	font-size:100px;
+}
+
+#singlenieuwsartikel p {
+	font-size:25px;
+}
+
+#socialmediabar {
+	width:915px;
+	height:150px;
+	position: relative;
+	list-style: none;
+	top:200px;
+}
+
+#socialmediabar li {
+	display: inline-block;
+	margin-left:5px;
+
+}
+#socialmediabar img {
+	width:20px;
+}
+
+.artikelcontent {
+	color:#fff;
+	font-size:25px;
+}
+
+
+
+#singlepostthumbnail {
+	width:100%;
+	max-height:200px;
+	margin: 0;
+}
+#singlepostthumbnail img {
+	width:100%;
+
+}
+
 @media only screen 
   and (min-device-width: 0px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  {
   	#nieuwsartikel {
         left:0;
         margin: 90px 0px 0px 0px;
@@ -327,13 +413,17 @@ body {
 	#navbar ul li {
 	 	
 }
+	#sidebarnieuwsartikel .col-sm-4 {
+	height:100px;
+	
+}
 
 }
 
 @media only screen 
   and (min-device-width: 480px) 
   and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+   {
   	#nieuwsartikel {
         left:0%;
         margin-top: 95px;
@@ -341,6 +431,10 @@ body {
     .navbar-brand {
 		display: none;
 		}
+	#sidebarnieuwsartikel .col-sm-4 {
+	height:0 auto;
+	
+}
 
 }
 
