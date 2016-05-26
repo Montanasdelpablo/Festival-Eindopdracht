@@ -6,18 +6,43 @@
 			<ul class="col-md-4">
 				<h2> Contact </h2>
 				<!-- Hier moet de input vanuit een custom field komen voor het toevoegen van contact gegevens-->
-				<li> Duinkerkenstraat 50 </li>
-				<li> 9723 BT</li>
-				<li> Groningen</li>
+				
+
+				<?php 
+								$user_id = 1;
+					       		$adres = get_user_meta( $user_id, 'adres', true );
+					       		$postcode = get_user_meta( $user_id, 'postcode', true);
+					       		$plaatsnaam = get_user_meta ( $user_id, 'plaatsnaam', true);
+				
+								echo "<li> $adres </li>";
+								echo "<li> $postcode</li>"; 
+								echo "<li> $plaatsnaam </li>";
+
+				?>
+
 			</ul>
 			
 			<ul class="col-md-4">
 			<div id="socialmedia">
 				<h2> Social Media </h2>
 				<!-- Hier moet de input vanuit een custom field komen voor het toevoegen van social media aan de footer -->
-				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/facebook.png">   </li>
-				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/twitter.png"></li>
-				<li><a href="#"></a> <img src="<?php echo bloginfo('template_url')?>/img/instagram.png"> </li>
+				<?php 			
+								$user_id = 1;
+					       		$twitter = get_user_meta( $user_id, 'twitter', true );
+					       		$facebook = get_user_meta( $user_id, 'facebook', true);
+					       		$instagram = get_user_meta ( $user_id, 'instagram', true);
+				
+								echo "<li><a target='_blank' href='$facebook'> <img src='";
+								echo bloginfo('template_url');
+								echo "/img/facebook.png'>    </a></li>";
+								echo "<li><a target='_blank' href='$twitter'> <img src='";
+								echo bloginfo('template_url');
+								echo "/img/twitter.png'> </a></li>"; 
+								echo "<li><a target='_blank' href='$instagram'> <img src='";
+								echo bloginfo('template_url');
+								echo "/img/instagram.png'> </a></li>";
+					       		
+				?>
 			</div>	
 			</ul>
 			
@@ -25,7 +50,7 @@
 			<ul class="col-md-4">
 			<!-- Hier moet de input vanuit een custom field komen voor het toevoegen van een Naam en Website van de maker/s -->
 				<h2> Made by </h2>
-				<li> </li>
+				<li> Young D's </li>
 				<li> Website:</li>
 				<li> <a href="#"> </a> </li>
 			</ul>
